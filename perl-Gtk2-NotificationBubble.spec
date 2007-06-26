@@ -3,7 +3,7 @@
 Summary: Perl module interface to the EggNotificationBubble library
 Name:    perl-Gtk2-%module
 Version: 0.01
-Release: %mkrel 5
+Release: %mkrel 6
 License: GPL or Artistic
 Group:   Development/GNOME and GTK+
 Source:  Gtk2-%module-%version.tar.bz2
@@ -22,15 +22,14 @@ arrows. They can display an icon and a bold header.
 
 %prep
 %setup -q -n Gtk2-%module-%version
-find -type d -name CVS | rm -rf 
 perl Makefile.PL INSTALLDIRS=vendor
 %patch0 -p1 -b .triangle
 
 %build
 %make OPTIMIZE="$RPM_OPT_FLAGS"
 
-#%check
-#%make test || :
+%check
+%make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
