@@ -3,7 +3,7 @@
 Summary: Perl module interface to the EggNotificationBubble library
 Name:    perl-Gtk2-%module
 Version: 0.01
-Release:	15
+Release:	16
 License: GPL or Artistic
 Group:   Development/GNOME and GTK+
 Source:  Gtk2-%module-%version.tar.bz2
