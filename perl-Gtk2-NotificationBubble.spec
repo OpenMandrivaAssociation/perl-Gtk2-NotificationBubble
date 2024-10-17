@@ -8,7 +8,7 @@ License: GPL or Artistic
 Group:   Development/GNOME and GTK+
 Source:  Gtk2-%module-%version.tar.bz2
 Patch0:  Gtk2-NotificationBubble-0.01-triangle.patch
-URL:     http://cvs.gnome.org/viewcvs/rhythmbox/widgets/eggnotificationbubble.c
+URL:     https://cvs.gnome.org/viewcvs/rhythmbox/widgets/eggnotificationbubble.c
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: gtk+2-devel perl-devel perl-ExtUtils-Depends perl-ExtUtils-PkgConfig perl-Glib >= 0.92
 BuildRequires: perl-Gtk2
